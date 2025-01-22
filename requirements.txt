@@ -10,4 +10,3 @@ pandas
 matplotlib
 numpy
 langchain-community
-PyAudio==0.2.11
