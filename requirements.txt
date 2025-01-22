@@ -10,5 +10,5 @@ pandas
 matplotlib
 numpy
 langchain-community
-pip install pipwin
-pipwin install pyaudio
+pipwin
+pyaudio
