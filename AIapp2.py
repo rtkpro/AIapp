@@ -281,22 +281,47 @@ elif task == "MCQ Question":
     st.title("MCQ Test for Students")
     # MCQ Questions and Answers
     questions = [
-        {"question": "What is the capital of France?", 
-        "options": ["Berlin", "Madrid", "Paris", "Rome"], 
-        "correct": "Paris"},
-        
-        {"question": "Which language is primarily used for data science?", 
-        "options": ["Java", "Python", "C++", "JavaScript"], 
-        "correct": "Python"},
-        
-        {"question": "What is the largest ocean on Earth?", 
-        "options": ["Atlantic Ocean", "Indian Ocean", "Arctic Ocean", "Pacific Ocean"], 
-        "correct": "Pacific Ocean"},
-        
-        {"question": "Who developed the theory of relativity?", 
-        "options": ["Isaac Newton", "Albert Einstein", "Nikola Tesla", "Galileo Galilei"], 
-        "correct": "Albert Einstein"}
+    {"question": "What is the correct way to declare a variable in Java?", 
+     "options": ["int = x 5;", "int x = 5;", "x = 5 int;", "5 = x int;"], 
+     "correct": "int x = 5;"},
+    
+    {"question": "What is the default value of a boolean variable in Java?", 
+     "options": ["true", "false", "null", "0"], 
+     "correct": "false"},
+    
+    {"question": "What is the result of the expression 5 % 2 in Java?", 
+     "options": ["2", "1", "0", "2.5"], 
+     "correct": "1"},
+    
+    {"question": "What is the purpose of the break statement in a Java switch statement?", 
+     "options": ["To exit the program", "To skip to the next case", "To exit the switch statement", "To repeat the switch statement"], 
+     "correct": "To exit the switch statement"},
+    
+    {"question": "What is the purpose of the return statement in a Java method?", 
+     "options": ["To exit the method", "To pass parameters to the method", "To return a value from the method", "To declare the method"], 
+     "correct": "To return a value from the method"},
+    
+    {"question": "How do you declare an array of integers in Java?", 
+     "options": ["int[] x;", "int x[];", "int x = [];", "int[] x = {};"], 
+     "correct": "int[] x;"},
+    
+    {"question": "What is the purpose of the extends keyword in Java?", 
+     "options": ["To implement an interface", "To inherit properties from a parent class", "To create a new class", "To declare a variable"], 
+     "correct": "To inherit properties from a parent class"},
+    
+    {"question": "What is the purpose of method overriding in Java?", 
+     "options": ["To create a new method", "To provide a different implementation of a method", "To declare a variable", "To exit the program"], 
+     "correct": "To provide a different implementation of a method"},
+    
+    {"question": "What is the purpose of the try-catch block in Java?", 
+     "options": ["To exit the program", "To handle exceptions", "To declare variables", "To create a new method"], 
+     "correct": "To handle exceptions"},
+    
+    {"question": "What is the purpose of the synchronized keyword in Java?", 
+     "options": ["To exit the program", "To declare a variable", "To create a new thread", "To ensure thread safety"], 
+     "correct": "To ensure thread safety"}
     ]
+
     # Create a function to calculate the score
     def calculate_score(student_answers):
         correct_answers = 0
@@ -346,12 +371,18 @@ elif task == "Code Evaluation":
     st.title("Python Code Evaluation App")
     # List of sample Python questions
     questions = [
-        "Write a function to calculate the factorial of a number.",
-        "Write a Python function that returns the Fibonacci sequence up to a given number.",
-        "Create a Python function that checks whether a string is a palindrome.",
-        "Write a Python program to sort a list of integers in ascending order."
+    "Implement a singleton class in Java. The singleton pattern restricts a class from instantiating multiple objects. It creates a single object that can be accessed globally.",
+    "Write a Java program to check if a given string is a palindrome or not. A palindrome is a word, phrase, number, or other sequence of characters that reads the same forward and backward (ignoring spaces, punctuation, and capitalization).",
+    "Implement a binary search tree in Java. A binary search tree is a data structure in which each node has at most two children (i.e., left child and right child) and each node represents a value.",
+    "Write a Java program to find the maximum contiguous subarray of an array. The maximum contiguous subarray is a subarray whose sum is maximum.",
+    "Implement a hash table in Java. A hash table is a data structure that stores key-value pairs in an array using a hash function to map keys to indices of the array.",
+    "Write a Java program to check if two given strings are anagrams of each other. An anagram is a word or phrase formed by rearranging the letters of a different word or phrase.",
+    "Write a Java program to find the first duplicate in an array. The first duplicate is the first element that appears more than once in the array.",
+    "Implement a queue using two stacks in Java. A queue is a data structure that follows the FIFO (First-In-First-Out) principle.",
+    "Write a Java program to find the maximum length of a substring without repeating characters. The maximum length of a substring without repeating characters is the maximum length of a substring that contains unique characters.",
+    "Implement a trie data structure in Java. A trie is a data structure that is used to store a dynamic set or associative array where the keys are usually strings."
     ]
-        
+    
     # Display a sample question to the user
     st.subheader("Sample Python Question:")
     question = st.selectbox("Choose a question", questions)
@@ -374,11 +405,18 @@ elif task == "Answer Evaluation":
     st.title("subjective question Evaluation App")
     # List of sample Python questions
     questions = [
-        "What is automation testing?",
-        "What is oops in python programming language?",
-        "what is qa testing?",
+    "What is the difference between '==' and '.equals()' in Java? Provide an example to illustrate your answer.",
+    "Explain the concept of encapsulation in Java. How does it help in data hiding?",
+    "Describe the difference between 'throw' and 'throws' in Java. Provide a scenario where you would use each.",
+    "What is the purpose of the 'finally' block in Java? Provide an example of how it is used.",
+    "Explain the concept of polymorphism in Java. Provide an example of method overriding and method overloading.",
+    "Describe the concept of synchronization in Java. How does it help in achieving thread safety? Provide an example of using the 'synchronized' keyword.",
+    "What is the difference between a HashMap and a Hashtable in Java? Provide a scenario where you would use each.",
+    "Explain the concept of generics in Java. How does it help in achieving type safety? Provide an example of using generics.",
+    "Describe the concept of serialization in Java. How does it help in storing and retrieving objects? Provide an example of using the 'Serializable' interface.",
+    "What is the difference between a LinkedList and an ArrayList in Java? Provide a scenario where you would use each."
     ]
-    
+
     # Display a sample question to the user
     st.subheader("Sample Question:")
     question = st.selectbox("Choose a question", questions)
